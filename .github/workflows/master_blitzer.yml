@@ -28,5 +28,5 @@ jobs:
       with:
         app-name: 'blitzer'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_2726146e6e084c22861f88bfcd37670c }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_12fff01fcc5b492486109918ed5aeb62 }}
         package: '${{ github.workspace }}/target/*.jar'
