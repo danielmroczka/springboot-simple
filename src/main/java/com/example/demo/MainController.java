@@ -10,8 +10,10 @@ import java.time.ZonedDateTime;
 @RequestMapping("/api")
 public class MainController {
 
-   @GetMapping
-   public String helloWorld() {
-       return "Hello World " + ZonedDateTime.now();
-   }
+    private static final String GREETING_PREFIX = "Hello World";
+
+    @GetMapping
+    public String getGreeting() {
+        return GREETING_PREFIX + " " + ZonedDateTime.now();
+    }
 }
